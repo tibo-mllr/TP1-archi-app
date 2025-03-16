@@ -43,7 +43,7 @@ function update(tab) {
 }
 
 function getMsgs() {
-  fetch("http://localhost:8080/msg/getAll")
+  fetch("https://tp1-archi-app-back.onrender.com/msg/getAll")
     .then(function (response) {
       return response.json();
     })
@@ -58,6 +58,8 @@ getMsgs();
 function submit() {
   const msg = $("textarea").val();
 
-  fetch(`http://localhost:8080/msg/post/${msg}`).then(() => getMsgs());
+  fetch(`https://tp1-archi-app-back.onrender.com/msg/post/${msg}`).then(() =>
+    getMsgs()
+  );
 }
 
