@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Messagerie</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cours d'architecures applicatives</h1>
+    </header>
+    <main>
+      <!-- Liste de 5 messages random -->
+      <div>
+        <ul id="message-list">
+          <li>
+            <p>Contenu du message 1</p>
+          </li>
+          <li>
+            <p>Contenu du message 2</p>
+          </li>
+          <li>
+            <p>Contenu du message 3</p>
+          </li>
+          <li>
+            <p>Contenu du message 4</p>
+          </li>
+          <li>
+            <p>Contenu du message 5</p>
+          </li>
+        </ul>
+        <button onclick="update(msgs)">Recharger les messages</button>
+      </div>
+      <!-- Poster de nouveaux messages -->
+      <div id="new-message">
+        <h2>Poster un nouveau message</h2>
+        <textarea></textarea>
+        <button onclick="submit()">Envoyer</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
+

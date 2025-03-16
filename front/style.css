@@ -1,0 +1,67 @@
+html {
+  color-scheme: light dark;
+  --background-color: #f0f0f0;
+  --text-color: #000;
+  --header-color: #48728a;
+  --primary-color: #a1a1a1;
+  --secondary-color: #6fa9bb;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --background-color: #333;
+    --text-color: #fff;
+    --header-color: #a1c4d8;
+    --primary-color: #555;
+    --secondary-color: #4a7a8a;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  padding: 1em;
+}
+
+h1 {
+  color: var(--header-color);
+}
+
+li {
+  border-radius: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: var(--primary-color);
+}
+
+#new-message {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: var(--secondary-color);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#new-message > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+textarea {
+  width: 100%;
+  min-height: 10vh;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
